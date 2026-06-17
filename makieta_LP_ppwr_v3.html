@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PPWR 2026 – opakowania wielokrotnego użytku | bekuplast</title>
+<meta name="description" content="PPWR (rozporządzenie UE 2025/40) obowiązuje od 12.08.2026. Sprawdź, co zmienia w opakowaniach transportowych Twojej firmy – policz koszt i zbadaj gotowość.">
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap");
+
+:root{
+  --bp-green-50:#f1faea; --bp-green-100:#defac3; --bp-green-200:#cbf893;
+  --bp-green-300:#b0d583; --bp-green-400:#8ec659; --bp-green-500:#65b32e;
+  --bp-green-600:#54971f; --bp-green-700:#427718; --bp-green-800:#325912; --bp-green-900:#21390b;
+  --bp-ink-900:#1d1d1d; --bp-ink-800:#2d2d2d; --bp-ink-700:#434343; --bp-ink-600:#5a5a5a;
+  --bp-ink-500:#717171; --bp-ink-400:#9a9a9a; --bp-ink-300:#c2c2c2; --bp-ink-200:#dedede;
+  --bp-ink-100:#ececec; --bp-ink-50:#f0f0f0; --bp-ink-25:#f3f3f3; --bp-white:#ffffff;
+  --f-display:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-label:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,monospace;
+  --ls-eyebrow:0.10em;
+  --r-sm:4px; --r-md:8px; --r-lg:12px; --r-xl:16px; --r-full:9999px;
+  --shadow-sm:0 2px 6px rgba(0,0,0,.05),0 1px 2px rgba(0,0,0,.04);
+  --shadow-md:0 8px 20px rgba(0,0,0,.06),0 2px 6px rgba(0,0,0,.04);
+  --shadow-lg:0 18px 40px rgba(0,0,0,.10),0 4px 10px rgba(0,0,0,.04);
+  --maxw:1280px;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;font:400 16px/1.6 var(--f-body);color:var(--bp-ink-700);background:var(--bp-white);-webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4{font-family:var(--f-display);color:var(--bp-ink-900);letter-spacing:-0.02em;margin:0;}
+h2{font-size:clamp(28px,3.4vw,40px);line-height:1.12;font-weight:700;}
+h3{font-size:22px;line-height:1.25;font-weight:700;}
+p{margin:0;}
+a{color:inherit;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;}
+section{padding:88px 0;position:relative;overflow:hidden;}
+.sec-light{background:var(--bp-ink-25);}
+.sec-white{background:var(--bp-white);}
+.sec-dark{background:var(--bp-ink-900);color:#cfcfcf;}
+.sec-dark h2,.sec-dark h3{color:#fff;}
+
+/* eyebrow chip */
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font:700 11px/1 var(--f-label);letter-spacing:var(--ls-eyebrow);text-transform:uppercase;color:var(--bp-ink-600);border:1px solid var(--bp-ink-200);border-radius:var(--r-full);padding:8px 14px;background:var(--bp-white);}
+.eyebrow::after{content:"";width:4px;height:4px;border-radius:50%;background:var(--bp-green-500);}
+.sec-dark .eyebrow{color:#bdbdbd;border-color:#3a3a3a;background:transparent;}
+.badge-art{display:inline-block;font:700 11px/1 var(--f-label);letter-spacing:.04em;color:#fff;background:var(--bp-green-500);border-radius:var(--r-sm);padding:6px 9px;}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;font:700 15px/1 var(--f-label);border-radius:var(--r-md);padding:15px 22px;text-decoration:none;cursor:pointer;border:0;transition:transform var(--ease) .16s,background .16s,border-color .16s;}
+.btn:hover{transform:translateY(-1px);}
+.btn-green{background:var(--bp-green-500);color:#fff;}
+.btn-green:hover{background:var(--bp-green-600);}
+.btn-dark{background:var(--bp-ink-900);color:#fff;}
+.btn-dark:hover{background:var(--bp-ink-800);}
+.btn-ghost{background:transparent;border:1px solid var(--bp-ink-200);color:var(--bp-ink-900);padding:13px 18px;font-size:13px;}
+.btn-ghost:hover{border-color:var(--bp-green-500);color:var(--bp-green-700);}
+
+.sq{position:absolute;width:120px;height:120px;background:var(--bp-green-500);opacity:.9;z-index:0;}
+.sq-gray{background:var(--bp-ink-100);}
+
+.head-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:end;margin-bottom:54px;}
+.head-grid .intro{color:var(--bp-ink-600);font-size:17px;line-height:1.6;}
+.sec-dark .head-grid .intro{color:#b5b5b5;}
+@media(max-width:860px){.head-grid{grid-template-columns:1fr;gap:18px;align-items:start;}}
+
+/* ============ HEADER ============ */
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--bp-ink-100);}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:12px 0;}
+.logo{display:flex;align-items:center;gap:9px;font:800 22px/1 var(--f-display);color:var(--bp-ink-900);text-decoration:none;}
+.logo span{color:var(--bp-green-500);}
+.logo .globe{width:26px;height:26px;border-radius:50%;background:var(--bp-ink-200);position:relative;}
+.logo .globe::after{content:"";position:absolute;right:-3px;top:-3px;width:13px;height:13px;background:var(--bp-green-500);border-radius:3px;}
+.util{display:flex;align-items:center;gap:22px;font:600 13px/1 var(--f-label);color:var(--bp-ink-600);}
+.util a{text-decoration:none;display:flex;align-items:center;gap:6px;}
+.util .pill-ai{background:var(--bp-green-500);color:#fff;padding:9px 14px;border-radius:var(--r-md);}
+.util .lang{width:32px;height:32px;border-radius:50%;border:1px solid var(--bp-ink-200);display:flex;align-items:center;justify-content:center;font-weight:700;}
+.menu{display:flex;gap:30px;padding:11px 0;border-top:1px solid var(--bp-ink-100);font:600 15px/1 var(--f-body);color:var(--bp-ink-800);}
+.menu a{text-decoration:none;}
+.menu a:hover{color:var(--bp-green-600);}
+@media(max-width:980px){.util .hide-sm{display:none;} .menu{overflow-x:auto;}}
+
+/* ============ HERO ============ */
+.hero{position:relative;min-height:640px;display:flex;align-items:center;color:#fff;overflow:hidden;background:#3a3d3f;}
+.hero .bg{position:absolute;inset:0;background-size:cover;background-position:center;}
+.hero .bg.b1{background:linear-gradient(135deg,#6b6f72,#42454799),repeating-linear-gradient(45deg,#83868a 0 38px,#777b7e 38px 76px);animation:switchbg 9s var(--ease) infinite;}
+.hero .bg.b2{background:linear-gradient(135deg,#3f5a2a,#23390b),repeating-linear-gradient(90deg,#5b7d39 0 60px,#4d6e2f 60px 120px);opacity:0;animation:switchbg2 9s var(--ease) infinite;}
+@keyframes switchbg{0%,38%{opacity:1}50%,88%{opacity:0}100%{opacity:1}}
+@keyframes switchbg2{0%,38%{opacity:0}50%,88%{opacity:1}100%{opacity:0}}
+.hero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,20,20,.55),rgba(20,20,20,.25) 40%,rgba(20,20,20,.5));}
+.hero .wrap{position:relative;z-index:2;width:100%;}
+.hero .intro{max-width:560px;font-size:18px;line-height:1.55;color:#f3f3f3;margin-bottom:18px;text-shadow:0 1px 10px rgba(0,0,0,.4);}
+.switch{font:800 clamp(64px,12vw,168px)/0.92 var(--f-display);letter-spacing:-.03em;display:flex;align-items:center;gap:.12em;flex-wrap:wrap;}
+.switch .to{display:inline-flex;align-items:center;justify-content:center;width:1.15em;height:1.15em;background:var(--bp-green-500);border-radius:50%;font-size:.62em;font-weight:800;outline:3px solid rgba(255,255,255,.85);outline-offset:6px;}
+.hero-cta{display:flex;gap:14px;justify-content:flex-end;margin-top:36px;flex-wrap:wrap;}
+.breadcrumb{background:var(--bp-white);border-bottom:1px solid var(--bp-ink-100);}
+.breadcrumb .wrap{display:flex;gap:10px;align-items:center;padding-top:14px;padding-bottom:14px;font:500 13px/1 var(--f-label);color:var(--bp-ink-500);}
+.breadcrumb b{color:var(--bp-ink-800);font-weight:600;}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;}
+@media(max-width:860px){.hero-cta{justify-content:flex-start;}}
+
+/* ============ 6 LICZB ============ */
+.stat-row{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;padding:26px 0;border-top:1px solid var(--bp-ink-100);}
+.stat-row:last-child{border-bottom:1px solid var(--bp-ink-100);}
+.stat-row .lbl{color:var(--bp-ink-600);font-size:16px;max-width:560px;}
+.stat-row .num{font:800 clamp(40px,6vw,76px)/1 var(--f-display);color:var(--bp-ink-900);letter-spacing:-.03em;text-align:right;}
+.stat-row .num.sm{font-size:clamp(34px,4.4vw,52px);}
+
+/* ============ 5 PUNKTÓW ============ */
+.cards5{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;border-left:1px solid #333;}
+.cards5 .c{padding:26px 24px;border-right:1px solid #333;min-height:300px;display:flex;flex-direction:column;}
+.cards5 .c .no{font:800 56px/1 var(--f-display);color:#3c3c3c;margin-bottom:auto;}
+.cards5 .c.active .no{color:var(--bp-green-500);}
+.cards5 .c h3{font-size:18px;margin:24px 0 10px;}
+.cards5 .c p{font-size:14px;color:#a9a9a9;line-height:1.55;}
+@media(max-width:980px){.cards5{grid-template-columns:1fr;border-left:0;}.cards5 .c{border-right:0;border-top:1px solid #333;min-height:0;}}
+
+/* ============ GANTT ============ */
+.gantt{background:var(--bp-white);border:1px solid var(--bp-ink-100);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-sm);}
+.g-years{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid var(--bp-ink-100);}
+.g-years .pad{border-right:1px solid var(--bp-ink-100);}
+.g-axis{position:relative;height:54px;}
+.g-axis .yr{position:absolute;top:18px;transform:translateX(-50%);font:600 12px/1 var(--f-label);color:var(--bp-ink-400);}
+.g-axis .yr.em{color:var(--bp-ink-900);font-weight:700;}
+.g-row{display:grid;grid-template-columns:280px 1fr;border-bottom:1px solid var(--bp-ink-50);min-height:92px;}
+.g-row:last-child{border-bottom:0;}
+.g-label{padding:18px 20px;border-right:1px solid var(--bp-ink-100);}
+.g-label .t{font:700 15px/1.3 var(--f-display);color:var(--bp-ink-900);margin-bottom:10px;}
+.g-track{position:relative;}
+.g-grid{position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,transparent 0,transparent calc(6.6667% - 1px),var(--bp-ink-50) calc(6.6667% - 1px),var(--bp-ink-50) 6.6667%);}
+.seg{position:absolute;top:50%;transform:translateY(-50%);height:34px;border-radius:var(--r-sm);display:flex;align-items:center;padding:0 12px;font:600 13px/1 var(--f-body);color:#fff;white-space:nowrap;overflow:hidden;}
+.seg.g500{background:var(--bp-green-500);}
+.seg.g600{background:var(--bp-green-600);}
+.seg.g700{background:var(--bp-green-700);}
+.seg.g800{background:var(--bp-green-800);}
+.seg.tent{background:repeating-linear-gradient(45deg,var(--bp-ink-200) 0 7px,var(--bp-ink-100) 7px 14px);color:var(--bp-ink-600);}
+.g-today{position:absolute;top:-54px;bottom:0;width:2px;background:var(--bp-ink-900);z-index:3;}
+.g-today::before{content:"DZIŚ";position:absolute;top:-2px;left:50%;transform:translateX(-50%) translateY(-100%);background:var(--bp-ink-900);color:#fff;font:700 10px/1 var(--f-label);letter-spacing:.08em;padding:5px 8px;border-radius:3px;white-space:nowrap;}
+.gantt-foot{margin-top:20px;font:400 13px/1.5 var(--f-body);color:var(--bp-ink-500);}
+.gantt-wrap{overflow-x:auto;}
+@media(max-width:860px){.gantt{min-width:760px;}}
+
+/* ============ BRANŻE ============ */
+.branze-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:48px;align-items:start;}
+.ind-list{list-style:none;margin:0;padding:0;}
+.ind-list li{font:700 clamp(20px,2.4vw,30px)/1.25 var(--f-display);color:var(--bp-ink-300);padding:13px 0;cursor:pointer;transition:color .16s;letter-spacing:-.02em;}
+.ind-list li:hover{color:var(--bp-ink-500);}
+.ind-list li.active{color:var(--bp-ink-900);}
+.ind-panel{position:sticky;top:120px;}
+.ind-img{position:relative;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:16/11;background:linear-gradient(135deg,#cfd3d6,#e7e9ea);display:flex;align-items:flex-end;}
+.ind-img .ph{position:absolute;top:14px;left:16px;font:500 12px/1 var(--f-label);color:#fff;opacity:.8;background:rgba(0,0,0,.25);padding:6px 9px;border-radius:4px;}
+.ind-img .ov{position:relative;width:100%;background:linear-gradient(0deg,rgba(0,0,0,.62),transparent);padding:26px 24px 22px;color:#fff;}
+.ind-img .ov p{font-size:15px;line-height:1.5;margin-bottom:16px;max-width:430px;}
+
+/* ============ NARZĘDZIA ============ */
+.tool{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+.tool.rev .preview{order:2;}
+.tool .preview{aspect-ratio:1/1;border-radius:var(--r-lg);background:var(--bp-white);border:1px solid var(--bp-ink-100);box-shadow:var(--shadow-md);display:flex;align-items:center;justify-content:center;color:var(--bp-ink-300);font:600 14px/1 var(--f-label);}
+.sec-light .tool .preview{background:var(--bp-ink-50);}
+.tool h2{margin:18px 0 26px;}
+.feat{list-style:none;margin:0 0 30px;padding:0;}
+.feat li{position:relative;padding-left:26px;margin-bottom:18px;font-size:16px;color:var(--bp-ink-700);line-height:1.5;}
+.feat li::before{content:"";position:absolute;left:0;top:8px;width:9px;height:9px;border-radius:2px;background:var(--bp-green-500);}
+@media(max-width:860px){.tool{grid-template-columns:1fr;gap:28px;}.tool.rev .preview{order:0;}}
+
+/* ============ FAQ ============ */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.25fr;gap:56px;align-items:start;}
+.acc{border-top:1px solid #3a3a3a;}
+.acc-item{border-bottom:1px solid #3a3a3a;}
+.acc-q{width:100%;text-align:left;background:none;border:0;color:#fff;font:600 19px/1.4 var(--f-display);padding:24px 40px 24px 0;cursor:pointer;position:relative;}
+.acc-q::after{content:"+";position:absolute;right:4px;top:22px;font-size:26px;color:var(--bp-green-500);font-weight:400;transition:transform .2s;}
+.acc-item.open .acc-q::after{content:"–";}
+.acc-a{max-height:0;overflow:hidden;transition:max-height .3s var(--ease);color:#a9a9a9;font-size:15px;line-height:1.6;}
+.acc-a p{padding:0 40px 26px 0;}
+@media(max-width:860px){.faq-grid{grid-template-columns:1fr;gap:22px;}}
+
+/* ============ KARUZELE ============ */
+.caro-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:36px;}
+.caro-nav{display:flex;gap:12px;}
+.caro-nav button{width:54px;height:54px;border-radius:50%;border:1px solid var(--bp-ink-200);background:var(--bp-white);color:var(--bp-ink-700);font-size:20px;cursor:pointer;transition:.16s;}
+.caro-nav button:hover{border-color:var(--bp-green-500);color:var(--bp-green-600);}
+.caro{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:none;}
+.caro::-webkit-scrollbar{display:none;}
+.caro>*{scroll-snap-align:start;flex:0 0 auto;}
+
+/* case studies */
+.case{width:min(560px,82vw);}
+.case .img{aspect-ratio:16/10;border-radius:var(--r-lg);background:linear-gradient(135deg,#3a3d3f,#5a5d5f);position:relative;overflow:hidden;}
+.case .img .ph{position:absolute;top:12px;left:14px;font:500 11px/1 var(--f-label);color:#fff;opacity:.7;}
+.case h3{margin:20px 0 6px;font-size:22px;letter-spacing:.01em;}
+.case .d{color:var(--bp-ink-600);font-size:15px;margin-bottom:14px;}
+.case .meta{display:flex;gap:10px;}
+.case .meta span{font:600 12px/1 var(--f-label);color:var(--bp-ink-600);border:1px solid var(--bp-ink-200);border-radius:var(--r-full);padding:8px 13px;}
+
+/* fakty big stats */
+.stats2{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-bottom:64px;}
+.bigstat{text-align:center;}
+.bigstat .circle{width:280px;height:280px;margin:0 auto 0;border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px dotted var(--bp-ink-300);}
+.bigstat .v{font:800 clamp(48px,7vw,84px)/1 var(--f-display);color:var(--bp-ink-900);letter-spacing:-.03em;}
+.bigstat .v .g{color:var(--bp-green-500);}
+.bigstat .lines{height:280px;display:flex;flex-direction:column;justify-content:center;gap:18px;}
+.bigstat .lines .ln{height:1px;background:var(--bp-ink-200);}
+.bigstat .src{display:inline-block;margin:22px 0 14px;font:500 12px/1.3 var(--f-label);color:var(--bp-ink-500);background:var(--bp-ink-50);border-radius:var(--r-md);padding:8px 12px;}
+.bigstat .cap{color:var(--bp-ink-600);font-size:15px;max-width:360px;margin:0 auto;line-height:1.5;}
+@media(max-width:860px){.stats2{grid-template-columns:1fr;gap:40px;}.bigstat .circle{width:220px;height:220px;}.bigstat .lines{height:auto;}}
+/* fact cards */
+.fcard{width:min(380px,80vw);background:var(--bp-white);border:1px solid var(--bp-ink-100);border-radius:var(--r-lg);padding:26px 24px 30px;box-shadow:var(--shadow-sm);}
+.fcard .badge-art{margin-bottom:18px;}
+.fcard .sep{border:0;border-top:1px dashed var(--bp-ink-200);margin:0 0 16px;}
+.fcard p{font-size:15px;color:var(--bp-ink-700);line-height:1.55;}
+
+/* ============ PRODUKTY ============ */
+.prod-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:start;}
+.prod-render{position:sticky;top:120px;aspect-ratio:1/1;border-radius:var(--r-lg);background:radial-gradient(circle at 60% 40%,#fff,#eef0f1);display:flex;align-items:center;justify-content:center;position:relative;}
+.prod-render .box3d{width:54%;height:40%;background:linear-gradient(160deg,#4a4d4f,#2c2e2f);border-radius:10px;box-shadow:var(--shadow-lg);}
+.prod-render .ph{position:absolute;bottom:16px;left:16px;font:500 12px/1 var(--f-label);color:var(--bp-ink-400);}
+.prod-list{list-style:none;margin:0;padding:0;}
+.prod-list li{border-bottom:1px solid var(--bp-ink-100);padding:22px 4px;cursor:pointer;opacity:.5;transition:opacity .16s;}
+.prod-list li.active{opacity:1;}
+.prod-list li h3{font-size:21px;margin-bottom:8px;}
+.prod-list li .d{display:flex;align-items:center;gap:8px;color:var(--bp-ink-600);font-size:14px;margin-bottom:14px;}
+.prod-list li .d::before{content:"⤢";color:var(--bp-green-500);}
+.prod-list li .lnk{display:none;}
+.prod-list li.active .lnk{display:inline-flex;}
+
+/* ============ KONTAKT ============ */
+.kontakt-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:48px;align-items:center;}
+.form-card{background:var(--bp-white);border-radius:var(--r-lg);padding:40px;box-shadow:var(--shadow-lg);color:var(--bp-ink-700);}
+.form-card h3{margin-bottom:24px;}
+.field{margin-bottom:18px;}
+.field label{display:block;font:600 14px/1 var(--f-label);color:var(--bp-ink-800);margin-bottom:8px;}
+.field input,.field select{width:100%;padding:14px 14px;border:1px solid var(--bp-ink-200);border-radius:var(--r-md);font:400 15px/1 var(--f-body);color:var(--bp-ink-800);background:var(--bp-white);}
+.field input:focus,.field select:focus{outline:0;border-color:var(--bp-green-500);}
+.opt{font-weight:400;color:var(--bp-ink-400);}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--bp-ink-500);margin:6px 0 22px;}
+.microcopy{font-size:13px;color:var(--bp-ink-500);margin-top:14px;}
+.kontakt-grid .feat li{color:#cfcfcf;}
+@media(max-width:860px){.kontakt-grid{grid-template-columns:1fr;gap:30px;}.form-card{padding:28px;}}
+
+/* ============ WIEDZA ============ */
+.blogcard{width:min(400px,82vw);}
+.blogcard .img{aspect-ratio:16/10;border-radius:var(--r-lg);background:linear-gradient(135deg,#c8ccce,#e6e8e9);}
+.blogcard .cat{display:block;font:700 11px/1 var(--f-label);letter-spacing:.1em;text-transform:uppercase;color:var(--bp-ink-500);margin:20px 0 12px;}
+.blogcard h3{font-size:21px;line-height:1.3;margin-bottom:18px;}
+
+/* footer */
+footer.site{background:var(--bp-ink-900);color:#9a9a9a;padding:40px 0;font-size:13px;}
+footer.site .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;}
+footer.site b{color:#fff;}
+
+/* note banner */
+.note{background:var(--bp-green-50);border-bottom:1px solid var(--bp-green-200);color:var(--bp-green-900);font:500 13px/1.4 var(--f-label);}
+.note .wrap{padding:10px 32px;display:flex;gap:10px;align-items:center;}
+
+/* sidenav: pionowa nawigacja po sekcjach (prawa krawędź) */
+.sidenav{position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:60;display:flex;flex-direction:column;gap:14px;}
+.sidenav a{position:relative;width:11px;height:11px;border-radius:50%;background:var(--bp-ink-300);display:block;transition:transform .18s,background .18s;}
+.sidenav a:hover,.sidenav a.active{background:var(--bp-green-500);transform:scale(1.3);}
+.sidenav a .lab{position:absolute;right:22px;top:50%;transform:translateY(-50%);white-space:nowrap;background:var(--bp-ink-900);color:#fff;font:600 11px/1 var(--f-label);padding:7px 10px;border-radius:5px;opacity:0;pointer-events:none;transition:opacity .18s;box-shadow:var(--shadow-sm);}
+.sidenav a:hover .lab{opacity:1;}
+@media(max-width:980px){.sidenav{display:none;}}
+/* reveal */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity var(--ease) .5s,transform var(--ease) .5s;}
+.reveal.in{opacity:1;transform:none;}
+</style>
+</head>
+<body>
+
+<div class="note"><div class="wrap">⚙️ Makieta v3 – podgląd lokalny. Struktura nowego projektu graficznego + zatwierdzone treści LP /ppwr/. Zdjęcia/rendery = placeholdery. Narzędzia (kalkulator, audyt) otwierają się pod własnymi URL-ami.</div></div>
+
+<!-- ============ NAWIGACJA PIONOWA (prawa krawędź) ============ -->
+<nav class="sidenav" id="sidenav" aria-label="Nawigacja po sekcjach">
+  <a href="#hero"><span class="lab">Start</span></a>
+  <a href="#skrot"><span class="lab">PPWR w skrócie</span></a>
+  <a href="#punkty"><span class="lab">PPWR w pięciu punktach</span></a>
+  <a href="#czas"><span class="lab">Oś czasu</span></a>
+  <a href="#branze"><span class="lab">Branże</span></a>
+  <a href="#kalkulator"><span class="lab">Kalkulator</span></a>
+  <a href="#audyt"><span class="lab">Audyt gotowości</span></a>
+  <a href="#faq"><span class="lab">FAQ</span></a>
+  <a href="#dowody"><span class="lab">Wdrożenia</span></a>
+  <a href="#fakty"><span class="lab">Liczby i przepisy</span></a>
+  <a href="#produkty"><span class="lab">Produkty</span></a>
+  <a href="#kontakt"><span class="lab">Kontakt</span></a>
+  <a href="#wiedza"><span class="lab">Wiedza</span></a>
+</nav>
+
+<!-- ============ 01 HERO ============ -->
+<div class="hero" id="hero">
+  <div class="bg b1"></div>
+  <div class="bg b2"></div>
+  <div class="scrim"></div>
+  <div class="wrap">
+    <h1 class="sr-only">PPWR – opakowania transportowe wielokrotnego użytku dla Twojej firmy</h1>
+    <p class="intro">Od 12 sierpnia 2026 r. unijne rozporządzenie PPWR (2025/40) obowiązuje wprost każdą firmę, która wprowadza lub przewozi towary w Unii Europejskiej.</p>
+    <div class="switch">Switch <span class="to">to</span> PPWR</div>
+    <div class="hero-cta">
+      <a class="btn btn-green" href="#kalkulator">Oblicz koszt PPWR</a>
+      <a class="btn btn-dark" href="#audyt">Sprawdź gotowość firmy</a>
+    </div>
+  </div>
+</div>
+<div class="breadcrumb"><div class="wrap">Strona główna <span>›</span> <b>PPWR</b></div></div>
+
+<!-- ============ 02 PPWR W SKRÓCIE ============ -->
+<section class="sec-white" id="skrot">
+  <div class="wrap">
+    <div class="head-grid reveal">
+      <div>
+        <span class="eyebrow">PPWR w skrócie</span>
+        <h2 style="margin-top:22px;">Najważniejsze informacje o PPWR oraz to, od kiedy obowiązuje ono Twoją firmę</h2>
+      </div>
+      <p class="intro">PPWR, czyli rozporządzenie UE 2025/40, zastępuje dyrektywę 94/62/WE. Jako rozporządzenie obowiązuje wprost w całej Unii, bez osobnej ustawy krajowej, a w pełni zaczyna obowiązywać 12 sierpnia 2026 roku.</p>
+    </div>
+    <div class="stats reveal">
+      <div class="stat-row"><div class="lbl">Rozporządzenie UE (zastępuje dyrektywę 94/62/WE)</div><div class="num sm">2025/40</div></div>
+      <div class="stat-row"><div class="lbl">Pełne stosowanie w całej UE</div><div class="num sm">12.08.2026</div></div>
+      <div class="stat-row"><div class="lbl">Wielokrotny użytek opakowań transportowych – cel 2030 (Art. 29)</div><div class="num">40%</div></div>
+      <div class="stat-row"><div class="lbl">Wielokrotny użytek w 2040 – cel kierunkowy (Art. 29)</div><div class="num">70%</div></div>
+      <div class="stat-row"><div class="lbl">Wielokrotny użytek w obiegu zamkniętym B2B (Art. 29)</div><div class="num">100%</div></div>
+      <div class="stat-row"><div class="lbl">Ograniczenie PFAS w opakowaniach do żywności</div><div class="num sm">Art.&nbsp;5</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 PPWR W PIĘCIU PUNKTACH ============ -->
+<section class="sec-dark" id="punkty">
+  <div class="sq sq-gray" style="top:-30px;right:120px;opacity:.08;"></div>
+  <div class="wrap">
+    <div class="reveal" style="margin-bottom:46px;">
+      <span class="eyebrow">Podstawy</span>
+      <h2 style="margin-top:22px;">Wyjaśniamy PPWR w pięciu punktach</h2>
+    </div>
+    <div class="cards5 reveal">
+      <div class="c active"><div class="no">01</div><h3>Rozporządzenie, nie dyrektywa</h3><p>2025/40 zastępuje dyrektywę 94/62/WE. Obowiązuje wprost w całej UE, bez krajowej transpozycji.</p></div>
+      <div class="c"><div class="no">02</div><h3>Dotyczy całego łańcucha</h3><p>Każde opakowanie i każdy uczestnik obrotu: producent, importer, dystrybutor, sprzedawca.</p></div>
+      <div class="c"><div class="no">03</div><h3>Wielokrotny użytek w transporcie</h3><p>Rosnące cele reuse dla palet, skrzynek i pojemników (Art. 29) – bezpośrednia domena bekuplast.</p></div>
+      <div class="c"><div class="no">04</div><h3>Recyklat i recyklowalność</h3><p>Wszystkie opakowania recyklowalne od 2030 r.; rośnie wymagana zawartość recyklatu w tworzywach (Art. 6 i 7).</p></div>
+      <div class="c"><div class="no">05</div><h3>Mniej odpadów i substancji</h3><p>Cele redukcji odpadów (Art. 43), limit pustej przestrzeni maks. 50% (Art. 24) i ograniczenie PFAS (Art. 5).</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 PPWR W CZASIE (GANTT) ============ -->
+<section class="sec-light" id="czas">
+  <div class="wrap">
+    <div class="head-grid reveal">
+      <div>
+        <span class="eyebrow">Daty wejścia</span>
+        <h2 style="margin-top:22px;">Od kiedy zaczynają obowiązywać kolejne wymogi PPWR</h2>
+      </div>
+      <p class="intro">Rozporządzenie (UE) 2025/40 nie ma jednej daty startu. Kolejne obowiązki wchodzą falami, a raz uruchomione – obowiązują bezterminowo. Punkty oznaczają terminy, a pasy – okresy, w których dany poziom wymagań pozostaje w mocy.</p>
+    </div>
+
+    <div class="gantt-wrap reveal">
+    <div class="gantt">
+      <div class="g-years">
+        <div class="pad"></div>
+        <div class="g-axis" id="gaxis"></div>
+      </div>
+      <!-- rows -->
+      <div class="g-row">
+        <div class="g-label"><div class="t">Status prawny rozporządzenia</div><span class="badge-art">REG. (UE) 2025/40</span></div>
+        <div class="g-track"><div class="g-grid"></div><div class="g-today" style="left:9.5%;"></div>
+          <div class="seg g700" style="left:6.7%;right:8px;">Stosowane bezpośrednio w całej UE</div></div>
+      </div>
+      <div class="g-row">
+        <div class="g-label"><div class="t">Zakaz PFAS w opakowaniach do kontaktu z żywnością</div><span class="badge-art">ART. 5</span></div>
+        <div class="g-track"><div class="g-grid"></div>
+          <div class="seg g500" style="left:9.5%;right:8px;">Zakaz w mocy</div></div>
+      </div>
+      <div class="g-row">
+        <div class="g-label"><div class="t">Zharmonizowane etykiety opakowań</div><span class="badge-art">ART. 12</span></div>
+        <div class="g-track"><div class="g-grid"></div>
+          <div class="seg g500" style="left:20%;right:8px;">Etykiety obowiązkowe (od 2028)</div></div>
+      </div>
+      <div class="g-row">
+        <div class="g-label"><div class="t">Reuse opakowań transportowych</div><span class="badge-art">ART. 29</span></div>
+        <div class="g-track"><div class="g-grid"></div>
+          <div class="seg g500" style="left:33.3%;width:53.3%;">min. 40% wielokrotnego użytku</div>
+          <div class="seg tent" style="left:88%;right:8px;">70% (cel kierunkowy)</div></div>
+      </div>
+      <div class="g-row">
+        <div class="g-label"><div class="t">Obieg zamknięty B2B – wewnątrz firmy i między firmami</div><span class="badge-art">ART. 29</span></div>
+        <div class="g-track"><div class="g-grid"></div>
+          <div class="seg g600" style="left:33.3%;right:8px;">do 100% wielokrotnego użytku</div></div>
+      </div>
+      <div class="g-row">
+        <div class="g-label"><div class="t">Recyklowalność wszystkich opakowań</div><span class="badge-art">ART. 6</span></div>
+        <div class="g-track"><div class="g-grid"></div>
+          <div class="seg g500" style="left:33.3%;width:53.4%;">dopuszczone klasy A–C</div>
+          <div class="seg g800" style="left:86.7%;right:8px;">min. klasa B</div></div>
+      </div>
+      <div class="g-row">
+        <div class="g-label"><div class="t">Redukcja odpadów opakowaniowych (cele państw UE)</div><span class="badge-art">ART. 43</span></div>
+        <div class="g-track"><div class="g-grid"></div>
+          <div class="seg g500" style="left:33.3%;width:33.3%;">−5%</div>
+          <div class="seg g600" style="left:66.7%;width:26.6%;">−10%</div>
+          <div class="seg g800" style="left:93.3%;right:8px;">−15%</div></div>
+      </div>
+    </div>
+    </div>
+    <p class="gantt-foot">Rozporządzenie (UE) 2025/40 – EUR-Lex · Komisja Europejska. Weryfikacja: 02.06.2026.</p>
+  </div>
+</section>
+
+<!-- ============ 05 TWOJA BRANŻA ============ -->
+<section class="sec-white" id="branze">
+  <div class="wrap">
+    <div class="head-grid reveal">
+      <div>
+        <span class="eyebrow">Objęte branże</span>
+        <h2 style="margin-top:22px;">Zobacz, co PPWR zmienia w Twojej branży</h2>
+      </div>
+      <p class="intro">PPWR dotyka każdej branży w innym stopniu. Dla jednych to nowy obowiązek, dla innych – przewaga, którą już posiadają. Wybierz swój sektor i zobacz, co zmienia się konkretnie u Ciebie.</p>
+    </div>
+    <div class="branze-grid reveal">
+      <ul class="ind-list" id="indList">
+        <li class="active" data-d="Opakowania detaliczne i transportowe, systemy zwrotu, presja sieci handlowych na wielokrotny użytek." data-u="/branzowe/handel-detaliczny-fmcg/">Retail / FMCG</li>
+        <li data-d="Pakowanie i wysyłka B2C, limit pustej przestrzeni (Art. 24), pojemniki obiegowe w fulfillment." data-u="/branzowe/e-commerce-3pl-fulfillment/">E-commerce, 3PL, fulfillment</li>
+        <li data-d="HACCP i higiena obiegu, RTP od pieczywa po mięso, mycie i identyfikowalność." data-u="/branzowe/przetworstwo-zywnosci/">Przetwórstwo żywności</li>
+        <li data-d="Skrzynki przegrodowe, system kaucyjny, obieg butelek i puszek." data-u="/branzowe/sprzedaz-i-transport-na-rynku-napojow/">Napoje i browary</li>
+        <li data-d="Pojemniki do AKL, shuttle i magazynów automatycznych, wersje ESD." data-u="/branzowe/intralogistyka/">Intralogistyka i magazyn</li>
+        <li data-d="Skrzynki ogrodnicze EURO i palety, obieg do sieci handlowych." data-u="/branzowe/rolnictwo-ogrodnictwo/">Rolnictwo, ogrodnictwo, owoce i warzywa</li>
+        <li data-d="Operator logistyczny: flota opakowań i logistyka zwrotna pod cele Art. 29." data-u="/branzowe/logistyka-i-transport/">Logistyka i transport (3PL)</li>
+        <li data-d="Czystość i identyfikowalność obiegu, ograniczenia substancji, bezpieczne pojemniki." data-u="/branzowe/przemysl-farmaceutyczny-i-kosmetyczny/">Farmacja, kosmetyki, chemia</li>
+        <li data-d="Standard VDA-KLT, obieg zamknięty u OEM, integracja z WMS." data-u="/branzowe/przemysl-motoryzacyjny-i-automotive/">Motoryzacja i automotive</li>
+        <li data-d="Obieg zamknięty B2B między zakładami (Art. 29): AGD/RTV, elektronika, meble." data-u="/branzowe/produkcja-przemyslowa/">Produkcja przemysłowa</li>
+      </ul>
+      <div class="ind-panel">
+        <div class="ind-img">
+          <span class="ph">zdjęcie branżowe</span>
+          <div class="ov">
+            <p id="indDesc">Opakowania detaliczne i transportowe, systemy zwrotu, presja sieci handlowych na wielokrotny użytek.</p>
+            <a class="btn btn-green" id="indBtn" href="/branzowe/handel-detaliczny-fmcg/">zobacz więcej</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 KALKULATOR ============ -->
+<section class="sec-light" id="kalkulator">
+  <div class="wrap">
+    <div class="tool reveal">
+      <div class="preview">podgląd kalkulatora</div>
+      <div>
+        <span class="eyebrow">Kalkulator PPWR</span>
+        <h2>Sprawdź koszt PPWR dla Twojej firmy</h2>
+        <ul class="feat">
+          <li>Porównuje dwie ścieżki: opakowania jednorazowe vs RTP, z pełnymi składowymi kosztu</li>
+          <li>Wynik kierunkowy do planowania budżetu – po ilu obiegach RTP zaczyna się zwracać</li>
+          <li>Uczciwie: RTP nie zawsze wychodzi taniej – narzędzie nie sprzedaje jednej tezy</li>
+          <li>Pierwszy taki kalkulator kosztu PPWR od polskiego producenta opakowań wielokrotnego użytku</li>
+        </ul>
+        <a class="btn btn-green" href="/ppwr/kalkulator-tco-roi/">Otwórz kalkulator kosztu PPWR →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 AUDYT ============ -->
+<section class="sec-white" id="audyt">
+  <div class="wrap">
+    <div class="tool rev reveal">
+      <div class="preview">podgląd audytu</div>
+      <div>
+        <span class="eyebrow">Audyt gotowości PPWR</span>
+        <h2>Sprawdź gotowość Twojej firmy na PPWR</h2>
+        <ul class="feat">
+          <li>10 pytań, ok. 5 minut – jedno pytanie na ekran z paskiem postępu</li>
+          <li>Wynik na 5 wymiarach gotowości i przypisana kategoria ryzyka</li>
+          <li>Raport PDF: część wspólna „Compliance PPWR” + część „Co to znaczy dla Twojej branży”</li>
+          <li>Segmentacja od pierwszego pytania (wybór branży)</li>
+        </ul>
+        <a class="btn btn-green" href="/ppwr/audyt-gotowosci/">Rozpocznij audyt gotowości →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 FAQ ============ -->
+<section class="sec-dark" id="faq">
+  <div class="sq" style="bottom:-40px;left:60px;width:90px;height:90px;opacity:.12;"></div>
+  <div class="wrap">
+    <div class="faq-grid">
+      <div class="reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2 style="margin-top:22px;">PPWR – najczęstsze pytania</h2>
+      </div>
+      <div class="acc reveal" id="acc">
+        <div class="acc-item open">
+          <button class="acc-q">Co to jest PPWR?</button>
+          <div class="acc-a"><p>PPWR (Packaging and Packaging Waste Regulation) to rozporządzenie (UE) 2025/40 w sprawie opakowań i odpadów opakowaniowych. Zastępuje dyrektywę 94/62/WE i obowiązuje wprost w całej Unii Europejskiej. Pełne stosowanie zaczyna się 12 sierpnia 2026 r. Reguluje m.in. wielokrotny użytek opakowań transportowych, recyklowalność, zawartość recyklatu i ograniczenie substancji szkodliwych.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-q">Kiedy PPWR wchodzi w życie?</button>
+          <div class="acc-a"><p>Rozporządzenie weszło w życie 11 lutego 2025 r., a ogólne stosowanie zaczyna się 12 sierpnia 2026 r. Kolejne wymagania wchodzą etapami: zharmonizowane etykiety od 2028 r., recyklowalność i pierwsze cele wielokrotnego użytku od 2030 r. (zaostrzenie recyklowalności do min. klasy B od 2038 r.), a dalsze progi redukcji odpadów w 2035 i 2040 r.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-q">Kogo dotyczy PPWR?</button>
+          <div class="acc-a"><p>Każdego uczestnika łańcucha dostaw opakowań w UE: producentów, importerów, dystrybutorów i sprzedawców. Jako rozporządzenie obowiązuje bezpośrednio – niezależnie od krajowej ustawy. Wymagania dotyczą opakowań jednostkowych, zbiorczych i transportowych.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-q">Czym różni się PPWR od ROP?</button>
+          <div class="acc-a"><p>ROP (rozszerzona odpowiedzialność producenta) to zasada finansowania zagospodarowania odpadów opakowaniowych. PPWR to szersze rozporządzenie UE, które reguluje same opakowania w duchu gospodarki cyrkularnej: wielokrotny użytek, recyklowalność, zawartość recyklatu i skład. ROP i PPWR działają równolegle i mogą obowiązywać tę samą firmę.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-q">Co reguluje Art. 29 PPWR?</button>
+          <div class="acc-a"><p>Art. 29 dotyczy wielokrotnego użytku opakowań transportowych – palet, skrzynek i pojemników. Wprowadza cel 40% od 2030 r. (wiążący) oraz 70% od 2040 r. (cel kierunkowy), a dla obiegu zamkniętego między tym samym operatorem lub partnerami – do 100%. To przepis najmocniej dotykający logistyki B2B i bezpośrednia domena opakowań bekuplast.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-q">Co to są opakowania zwrotne?</button>
+          <div class="acc-a"><p>Opakowania zwrotne to opakowania wielokrotnego użytku krążące w obiegu zamkniętym: po rozładunku wracają do nadawcy lub operatora, są myte i używane ponownie, zamiast trafiać na odpady po jednym transporcie. W transporcie to m.in. palety, skrzynki i pojemniki RTP – filar gospodarki cyrkularnej w logistyce.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 09 DOWODY ============ -->
+<section class="sec-light" id="dowody">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;max-width:760px;margin:0 auto 48px;">
+      <span class="eyebrow">Zaufali nam</span>
+      <h2 style="margin:22px 0 18px;">Firmy, które już postawiły na opakowania wielokrotnego użytku</h2>
+      <p class="intro" style="margin:0 auto;">Wybrane wdrożenia bekuplast. Pojemniki, które każdego dnia krążą w obiegu zamkniętym u naszych klientów.</p>
+    </div>
+    <div class="caro-head reveal">
+      <div></div>
+      <div class="caro-nav"><button data-c="caseCaro" data-dir="-1">←</button><button data-c="caseCaro" data-dir="1">→</button></div>
+    </div>
+    <div class="caro reveal" id="caseCaro">
+      <div class="case"><div class="img"><span class="ph">zdjęcie wdrożenia</span></div><h3>ROSSMANN</h3><div class="d">Intralogistyka i retail. Obieg pojemników w sieci handlowej.</div><div class="meta"><span>2025</span><span>160 000 pojemników</span></div></div>
+      <div class="case"><div class="img"><span class="ph">zdjęcie wdrożenia</span></div><h3>Onninen</h3><div class="d">Dystrybucja branży budowlanej i instalacyjnej.</div><div class="meta"><span>2019</span><span>40 000 pojemników</span></div></div>
+      <div class="case"><div class="img"><span class="ph">zdjęcie wdrożenia</span></div><h3>Orbico</h3><div class="d">Dystrybucja beauty i FMCG.</div><div class="meta"><span>2023</span><span>46 000 pojemników</span></div></div>
+      <div class="case"><div class="img"><span class="ph">zdjęcie wdrożenia</span></div><h3>Auto Partner SA</h3><div class="d">Dystrybucja części samochodowych.</div><div class="meta"><span>2022</span><span>27 000 pojemników</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10 FAKTY ============ -->
+<section class="sec-white" id="fakty">
+  <div class="wrap">
+    <h2 class="reveal" style="text-align:center;margin-bottom:54px;">PPWR w liczbach i przepisach</h2>
+    <div class="stats2 reveal">
+      <div class="bigstat">
+        <div class="circle"><div class="v"><span class="g">120</span><br>cykli</div></div>
+        <span class="src">wg Reusable Packaging Europe (factsheet 2022)</span>
+        <p class="cap">Tyle obiegów osiągają opakowania transportowe wielokrotnego użytku – przy żywotności 7–12 lat.</p>
+      </div>
+      <div class="bigstat">
+        <div class="lines"><div class="ln"></div><div class="ln"></div><div class="v" style="margin:6px 0;"><span class="g">47,2</span> mld €</div><div class="ln"></div><div class="ln"></div></div>
+        <span class="src">wg oceny skutków Komisji Europejskiej (PPWR)</span>
+        <p class="cap">Szacowane oszczędności i ok. 23 mln ton mniej emisji CO₂ rocznie do 2030 r. dzięki PPWR.</p>
+      </div>
+    </div>
+    <div class="caro-head reveal">
+      <h3>Najważniejsze artykuły rozporządzenia</h3>
+      <div class="caro-nav"><button data-c="factCaro" data-dir="-1">←</button><button data-c="factCaro" data-dir="1">→</button></div>
+    </div>
+    <div class="caro reveal" id="factCaro">
+      <div class="fcard"><span class="badge-art">ART. 29</span><hr class="sep"><p>Cele wielokrotnego użytku opakowań transportowych: 40% (2030), 70% – cel kierunkowy (2040), do 100% w obiegu zamkniętym B2B.</p></div>
+      <div class="fcard"><span class="badge-art">ART. 6</span><hr class="sep"><p>Wszystkie opakowania recyklowalne od 1 stycznia 2030 r. (klasy A–C; min. klasa B od 2038 r.).</p></div>
+      <div class="fcard"><span class="badge-art">ART. 5</span><hr class="sep"><p>Ograniczenie substancji potencjalnie szkodliwych; PFAS w opakowaniach do żywności od 12.08.2026.</p></div>
+      <div class="fcard"><span class="badge-art">ART. 43</span><hr class="sep"><p>Redukcja odpadów opakowaniowych: −5% (2030), −10% (2035), −15% (2040) względem 2018 r.</p></div>
+      <div class="fcard"><span class="badge-art">ART. 24</span><hr class="sep"><p>Limit pustej przestrzeni w opakowaniach zbiorczych, transportowych i e-commerce: maks. 50%.</p></div>
+      <div class="fcard"><span class="badge-art">ART. 12</span><hr class="sep"><p>Zharmonizowane etykiety opakowań obowiązkowe od 2028 r.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11 PRODUKTY ============ -->
+<section class="sec-white" id="produkty" style="background:var(--bp-ink-25);">
+  <div class="wrap">
+    <div class="reveal" style="margin-bottom:46px;">
+      <span class="eyebrow">Produkty</span>
+      <h2 style="margin-top:22px;">Pojemniki i palety bekuplast gotowe na wymagania PPWR</h2>
+    </div>
+    <div class="prod-grid reveal">
+      <div class="prod-render"><div class="box3d"></div><span class="ph" id="prodPh">render: basicline</span></div>
+      <ul class="prod-list" id="prodList">
+        <li class="active" data-r="basicline"><h3>basicline</h3><div class="d">Uniwersalna seria w standardzie EURO-NORM.</div><a class="btn btn-green lnk" href="#">Zobacz serię</a></li>
+        <li data-r="silverline"><h3>silverline</h3><div class="d">Wzmocniona – do AKL, systemów shuttle i automotive.</div><a class="btn btn-green lnk" href="#">Zobacz serię</a></li>
+        <li data-r="lightline"><h3>lightline</h3><div class="d">Lekka, z mniejszym śladem CO₂ na obieg.</div><a class="btn btn-green lnk" href="#">Zobacz serię</a></li>
+        <li data-r="clever move box"><h3>clever move box</h3><div class="d">Składana – redukcja objętości do 84%.</div><a class="btn btn-green lnk" href="#">Zobacz serię</a></li>
+        <li data-r="KLT / VDA"><h3>KLT / VDA</h3><div class="d">Standard motoryzacyjny, kompatybilny z poolami OEM.</div><a class="btn btn-green lnk" href="#">Zobacz serię</a></li>
+        <li data-r="bakeline"><h3>bakeline</h3><div class="d">Spożywcza, HDPE, zgodna z HACCP.</div><a class="btn btn-green lnk" href="#">Zobacz serię</a></li>
+        <li data-r="palety plastikowe"><h3>palety plastikowe</h3><div class="d">Alternatywa dla palet drewnianych fumigowanych.</div><a class="btn btn-green lnk" href="#">Zobacz serię</a></li>
+        <li data-r="skrzyniopalety"><h3>skrzyniopalety</h3><div class="d">Wielkogabarytowe, 12+ lat życia w obiegu.</div><a class="btn btn-green lnk" href="#">Zobacz serię</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12 KONTAKT ============ -->
+<section class="sec-dark" id="kontakt">
+  <div class="sq" style="top:80px;right:-20px;opacity:.85;"></div>
+  <div class="sq sq-gray" style="bottom:40px;left:46%;opacity:.06;"></div>
+  <div class="wrap">
+    <div class="kontakt-grid">
+      <div class="reveal">
+        <span class="eyebrow">Porozmawiajmy</span>
+        <h2 style="margin:22px 0 30px;">Porozmawiaj z ekspertem bekuplast o PPWR</h2>
+        <ul class="feat">
+          <li>Odpowiadamy w 24 godziny</li>
+          <li>Rozmowa z ekspertem, nie z handlowcem</li>
+          <li>Konsultacja bezpłatna i niezobowiązująca</li>
+          <li>Próbki produktów wysyłamy bezpłatnie</li>
+        </ul>
+      </div>
+      <div class="form-card reveal">
+        <h3>Umów rozmowę z ekspertem</h3>
+        <div class="field"><label>Imię i nazwisko</label><input placeholder="Twoje imię i nazwisko"></div>
+        <div class="field"><label>Firma</label><input placeholder="Nazwa firmy"></div>
+        <div class="field"><label>Służbowy e-mail</label><input placeholder="Adres e-mail"></div>
+        <div class="field"><label>Branża</label><select><option>Wybierz</option><option>Retail / FMCG</option><option>E-commerce, 3PL, fulfillment</option><option>Przetwórstwo żywności</option><option>Napoje i browary</option><option>Intralogistyka i magazyn</option><option>Rolnictwo, ogrodnictwo, owoce i warzywa</option><option>Logistyka i transport (3PL)</option><option>Farmacja, kosmetyki, chemia</option><option>Motoryzacja i automotive</option><option>Produkcja przemysłowa</option><option>Inna</option></select></div>
+        <div class="field"><label>Telefon <span class="opt">(opcjonalnie)</span></label><input placeholder="Telefon – jeśli wolisz, oddzwonimy"></div>
+        <label class="consent"><input type="checkbox" style="width:auto;margin-top:3px;"> Wyrażam zgodę na kontakt w sprawie zapytania (RODO). <a href="#" style="color:var(--bp-green-600);">Polityka prywatności</a>.</label>
+        <a class="btn btn-green" href="#" style="width:100%;justify-content:center;">Umów rozmowę z ekspertem</a>
+        <p class="microcopy">Odezwiemy się mailowo w 24 h. Wolisz rozmowę? Zostaw numer – oddzwonimy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 13 WIEDZA ============ -->
+<section class="sec-light" id="wiedza">
+  <div class="wrap">
+    <div class="caro-head reveal">
+      <div>
+        <span class="eyebrow">Wiedza</span>
+        <h2 style="margin-top:22px;max-width:680px;">Dowiedz się więcej o PPWR i opakowaniach wielokrotnego użytku</h2>
+      </div>
+      <div class="caro-nav"><button data-c="blogCaro" data-dir="-1">←</button><button data-c="blogCaro" data-dir="1">→</button></div>
+    </div>
+    <div class="caro reveal" id="blogCaro">
+      <div class="blogcard"><div class="img"></div><span class="cat">Przewodnik</span><h3>PPWR – co to jest, kogo dotyczy i kiedy obowiązuje</h3><a class="btn btn-ghost" href="#">zobacz więcej</a></div>
+      <div class="blogcard"><div class="img"></div><span class="cat">Porównanie</span><h3>ROP a PPWR – czym się różnią i które dotyczy Twojej firmy</h3><a class="btn btn-ghost" href="#">zobacz więcej</a></div>
+      <div class="blogcard"><div class="img"></div><span class="cat">Pogłębione</span><h3>Art. 29 PPWR – opakowania transportowe wielokrotnego użytku</h3><a class="btn btn-ghost" href="#">zobacz więcej</a></div>
+      <div class="blogcard"><div class="img"></div><span class="cat">Praktyka</span><h3>Opakowania zwrotne w logistyce – jak zacząć obieg zamknięty</h3><a class="btn btn-ghost" href="#">zobacz więcej</a></div>
+      <div class="blogcard"><div class="img"></div><span class="cat">Branża</span><h3>PPWR w handlu i FMCG – opakowania detaliczne i transportowe</h3><a class="btn btn-ghost" href="#">zobacz więcej</a></div>
+      <div class="blogcard"><div class="img"></div><span class="cat">Pooling</span><h3>Pooling palet i pojemników – jak działa i kiedy się opłaca</h3><a class="btn btn-ghost" href="#">zobacz więcej</a></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site"><div class="wrap"><div><b>bekuplast</b> – producent opakowań transportowych wielokrotnego użytku.</div><div>Makieta v3 · LP /ppwr/ · podgląd lokalny</div></div></footer>
+
+<script>
+// year axis
+(function(){
+  var ax=document.getElementById('gaxis');
+  for(var y=2025;y<=2040;y++){
+    var s=document.createElement('span');
+    s.className='yr'+(y===2026||y===2030||y===2040?' em':'');
+    s.textContent=y;
+    s.style.left=((y-2025)/15*100)+'%';
+    ax.appendChild(s);
+  }
+})();
+// FAQ accordion
+document.querySelectorAll('#acc .acc-q').forEach(function(q){
+  q.addEventListener('click',function(){
+    var it=q.parentElement, open=it.classList.contains('open');
+    document.querySelectorAll('#acc .acc-item').forEach(function(i){i.classList.remove('open');i.querySelector('.acc-a').style.maxHeight=null;});
+    if(!open){it.classList.add('open');var a=it.querySelector('.acc-a');a.style.maxHeight=a.scrollHeight+'px';}
+  });
+});
+// open first FAQ on load
+window.addEventListener('load',function(){var f=document.querySelector('#acc .acc-item.open .acc-a');if(f)f.style.maxHeight=f.scrollHeight+'px';});
+// industries
+(function(){
+  var list=document.getElementById('indList'),desc=document.getElementById('indDesc'),btn=document.getElementById('indBtn');
+  list.addEventListener('click',function(e){var li=e.target.closest('li');if(!li)return;
+    list.querySelectorAll('li').forEach(function(x){x.classList.remove('active');});
+    li.classList.add('active');desc.textContent=li.dataset.d;btn.setAttribute('href',li.dataset.u);});
+})();
+// products
+(function(){
+  var list=document.getElementById('prodList'),ph=document.getElementById('prodPh');
+  list.addEventListener('click',function(e){var li=e.target.closest('li');if(!li)return;
+    list.querySelectorAll('li').forEach(function(x){x.classList.remove('active');});
+    li.classList.add('active');ph.textContent='render: '+li.dataset.r;});
+})();
+// carousels
+document.querySelectorAll('.caro-nav button').forEach(function(b){
+  b.addEventListener('click',function(){
+    var el=document.getElementById(b.dataset.c);
+    el.scrollBy({left:(parseInt(b.dataset.dir,10))*Math.min(el.clientWidth*0.85,560),behavior:'smooth'});
+  });
+});
+// reveal on scroll
+var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+// sidenav scrollspy
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.sidenav a'));
+  var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a;});
+  var so=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){links.forEach(function(l){l.classList.remove('active');});if(map[en.target.id])map[en.target.id].classList.add('active');}});},{rootMargin:'-45% 0px -50% 0px'});
+  Object.keys(map).forEach(function(id){var el=document.getElementById(id);if(el)so.observe(el);});
+})();
+</script>
+</body>
+</html>
